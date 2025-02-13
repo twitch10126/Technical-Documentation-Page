@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <nav id="navbar">
+                <header>HTML and CSS</header>
+                <ul id="nav-list">
+                    <li><a href="#HTML_Introduction" class="nav-link">HTML Introduction</a></li>
+                    <li><a href="#Basic" class="nav-link">Basic</a></li>
+
+                    <li><a href="#Attributes" class="nav-link">Attributes</a></li>
+
+                    <li><a href="#Lists" class="nav-link">Lists</a></li>
+
+                    <li><a href="#Div" class="nav-link">Div</a></li>
+
+                    <li><a href="#CSS_Introduction" class="nav-link">CSS Introduction</a></li>
+
+                    <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
+
+                    <li><a href="#Fonts" class="nav-link">Fonts</a></li>
+
+                    <li><a href="#References" class="nav-link">References</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <main id="main-doc">
+                <section class="main-section" id="HTML_Introduction">
+                    <header>HTML Introduction</header>
+                    <h4>What is HTML?</h4>
+                    <p>
+                    <ul>
+                        <li>HTML stands for Hyper Text Markup Language</li>
+                        <li>HTML is the standard markup language for creating Web pages</li>
+                        <li>HTML describes the structure of a Web page</li>
+                        <li>HTML consists of a series of elements</li>
+                        <li>HTML elements tell the browser how to display the content</li>
+                        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph",
+                            "this is a
+                            link",
+                            etc.
+                        </li>
+                    </ul>
+                    </p>
+                    <div id="example">
+                        <h4>Example</h4>
+
+                        <p>
+                        <pre><code>
+             &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="main-section" id="Basic">
+                    <header>Basic</header>
+                    <h4>HTML Headings</h4>
+                    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+                    </p>
+                    <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading:
+                    </p>
+                    <div id="example">
+                        <h4>Example</h4>
+                        <p>
+                        <pre><code>
+        &lt;h1&gt;This is heading 1&lt;/h1&gt;
+        &lt;h2&gt;This is heading 2&lt;/h2&gt;
+        &lt;h3&gt;This is heading 3&lt;/h3&gt;
+        </code></pre>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="main-section" id="Attributes">
+                    <header>Attributes</header>
+                    <p>
+                    <ul>
+                        <li>All HTML elements can have attributes</li>
+                        <li>Attributes provide additional information about elements</li>
+                        <li>Attributes are always specified in the start tag</li>
+                        <li>Attributes usually come in name/value pairs like: name="value"</li>
+                    </ul>
+                    </p>
+                    <p>The src Attribute</p>
+                    <p>
+                        The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the
+                        path to the
+                        image
+                        to be displayed:
+                    </p>
+                    <div id="example">
+                        <h4>Example</h4>
+
+                        <p>
+                        <pre><code>
+          &lt;img src="img_girl.jpg"&gt;
+          </code></pre>
+                        </p>
+                    </div>
+                    <p>The alt Attribute</p>
+                    <p>The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if
+                        the image
+                        for
+                        some reason cannot be displayed. This can be due to a slow connection, or an error in the src
+                        attribute, or
+                        if
+                        the user uses a screen reader.
+                    </p>
+                    <div id="example">
+
+                        <h4>Example</h4>
+
+                        <p>
+
+                        <pre><code>
+
+                                &lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;
+
+                            </code></pre>
+
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="main-section" id="Lists">
+                    <header>Lists</header>
+                    <p>HTML lists allow web developers to group a set of related items in lists.</p>
+                    <div id="example">
+                        <h4>Example</h4>
+                        <p>An unordered HTML list:
+                        <ul>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                        </p>
+                        <p>
+                        <ol>
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                            <li>Fourth item</li>
+                        </ol>
+                        </p>
+                        <p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt;
+                            tag.
+
+                            The list items will be marked with bullets (small black circles) by default</p>
+                        <p>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt;
+                            tag.
+
+                            The list items will be marked with numbers by default.</p>
+                </section>
+
+                <section class="main-section" id="Div">
+                    <header>Div</header>
+                    <p>The &lt;div&gt; element is by default a block element, meaning that it takes all available width,
+                        and comes
+                        with line breaks before and after.</p>
+                    <p>The &lt;div&gt; element has no required attributes, but style, class and id are common.
+                    </p>
+                    <p>The &lt;div&gt; element is often used to group sections of a web page together.</p>
+                    <div id="example">
+                        <h4>Example</h4>
+                        <p>
+                        <pre><code>
+  &lt;div&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital city of England.&lt;/p&gt;
+  &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;
+  &lt;/div&gt;
+  </code></pre>
+                        </p>
+                        <div>
+                            <div id="result">
+                                <h4>Result</h4>
+                                <p>
+                                <pre><code>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+</code></pre>
+                                </p>
+                            </div>
+                </section>
+
+                <section class="main-section" id="CSS_Introduction">
+                    <header>CSS Introduction</header>
+                    <h4>What is CSS?</h4>
+                    <p>
+                    <ul>
+                        <li>CSS stands for Cascading Style Sheets</li>
+                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                        <li>External stylesheets are stored in CSS files</li>
+                    </ul>
+                    </p>
+                </section>
+
+                <section class="main-section" id="CSS_Selectors">
+                    <header>CSS Selectors</header>
+                    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+                    <p>We can divide CSS selectors into five categories:</p>
+                    <ul>
+                        <li>Simple selectors (select elements based on name, id, class)</li>
+                        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                    </ul>
+                    <h4>The CSS element Selector</h4>
+                    <p>The element selector selects HTML elements based on the element name.</p>
+                    <div id="example">
+                        <h4>Example</h4>
+                        <pre><code>
+          p {
+            text-align: center;
+            color: red;
+            }
+</code></pre>
+                        <div>
+                </section>
+
+                <section class="main-section" id="Fonts">
+                    <header>Fonts</header>
+                    <p>Font Selection is Important</p>
+                    <p>Choosing the right font has a huge impact on how the readers experience a website.</p>
+
+                    <p>The right font can create a strong identity for your brand.</p>
+
+                    <p>Using a font that is easy to read is important. The font adds value to your text. It is also
+                        important to
+                        choose the correct color and text size for the font.</p>
+
+                    <h4>Generic Font Families</h4>
+                    <p>In CSS there are five generic font families:</p>
+                    <ol>
+                        <li>Serif fonts have a small stroke at the edges of each letter. They create a sense of
+                            formality and
+                            elegance.
+                        </li>
+                        <li>Sans-serif fonts have clean lines (no small strokes attached). They create a modern and
+                            minimalistic
+                            look.
+                        </li>
+                        <li>Monospace fonts - here all the letters have the same fixed width. They create a mechanical
+                            look. </li>
+                        <li>Cursive fonts imitate human handwriting.</li>
+                        <li>Fantasy fonts are decorative/playful fonts.</li>
+                    </ol>
+                    <p>All the different font names belong to one of the generic font families.</p>
+                </section>
+
+                <section class="main-section" id="References">
+                    <header>References</header>
+                    <ul>
+                        <li>All the information in this page was taken from <a
+                                href="https://www.w3schools.com/">w3schools.<a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
